@@ -19,10 +19,12 @@ jobs:
       - name: Setup Android SDK
         uses: android-actions/setup-android@v3
 
-      - name: Install Gradle
-        uses: gradle/actions/setup-gradle@v3
-        with:
-          gradle-version: '8.4'
+      - name: Setup Gradle
+        run: |
+          wget -q https://services.gradle.org/distributions/gradle-8.4-bin.zip
+          unzip -q gradle-8.4-bin.zip
+          export PATH=$PWD/gradle-8.4/bin:$PATH
+          echo "$PWD/gradle-8.4/bin" >> $GITHUB_PATH
 
       - name: Build Release APK
         run: gradle assembleRelease
