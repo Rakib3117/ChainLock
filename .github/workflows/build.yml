@@ -37,3 +37,4 @@ jobs:
           name: ChainLock-APK
           path: app/build/outputs/apk/debug/app-debug.apk
           retention-days: 30
+          
