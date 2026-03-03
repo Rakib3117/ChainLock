@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ChainLock</string>
+    <string name="accessibility_description">ChainLock monitors which app is open and blocks locked apps until you complete the required usage time.</string>
+
+    <style name="AppTheme" parent="android:Theme.Material.NoActionBar">
+        <item name="android:windowBackground">#0a0a0f</item>
+        <item name="android:statusBarColor">#0a0a0f</item>
+        <item name="android:navigationBarColor">#0a0a0f</item>
+    </style>
+
+    <style name="BlockTheme" parent="android:Theme.Material.NoActionBar">
+        <item name="android:windowBackground">#0a0a0f</item>
+        <item name="android:statusBarColor">#0a0a0f</item>
+    </style>
+</resources>
